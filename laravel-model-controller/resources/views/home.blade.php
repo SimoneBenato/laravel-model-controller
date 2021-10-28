@@ -1,3 +1,7 @@
 @extends('layouts.app')
 
-{{-- @yield('name') --}}
+@section('content')
+    @foreach ($movies as $movie)
+        <p>{{ $movie['title'] }}</p>
+    @endforeach
+@endsection
